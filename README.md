@@ -10,7 +10,6 @@
 - Babel 7 (+ Plugins)
 - ESLint (+ precommit hooks w/ Husky)
 - Prettier
-- Simple Dockerfile
 
 ## How To Use
 
