@@ -7,7 +7,7 @@ const morgan = require('morgan');
 const routes = require('./api/routes/index.router');
 
 const contentPath = process.env.NODE_ENV === 'production' ? 'dist' : 'src';
-const port = process.env.PORT || 1337;
+const port = process.env.PORT || 8000;
 
 // Middleware galore
 app.use(morgan('dev')); // logging
@@ -22,5 +22,5 @@ app.use(routes);
 
 app.listen(port, () => {
   // eslint-disable-next-line no-console
-  console.log(`🌋 Listening on port: ${port}`);
+  console.log(`Listening on port: ${port}`);
 });

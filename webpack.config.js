@@ -1,13 +1,14 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
-const SERVER_PORT = 1337;
-const DEV_PORT = 3000;
+const SERVER_PORT = 8000;
+const DEV_PORT = 8002;
 
 module.exports = {
   devServer: {
     compress: true,
     open: false,
+    host: '0.0.0.0',
     port: DEV_PORT,
     quiet: true,
     proxy: {
